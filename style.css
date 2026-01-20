@@ -9,7 +9,7 @@
 :root {
     --bg-primary-color: rgba(26, 11, 46, 1);
     --text-primary-color: white;
-    --gradient-primary: linear-gradient(90deg, #ff00cc, #8b5cf6);
+    --gradient-primary: linear-gradient(90deg, #ffae00, #f2186f, #8b5cf6);
 }
 
 header {
@@ -49,9 +49,10 @@ header {
     margin: 0 15px;
 }
 
-.nav-btn {
+.primary-button {
     font-size: 1rem;
-    padding: 10px 25px;
+    font-weight: bold;
+    padding: 5px 20px;
     background: var(--gradient-primary);
     color: var(--text-primary-color);
     border: none;
@@ -59,32 +60,234 @@ header {
     transition: all 0.3s ease;
 }
 
-.nav-btn:hover {
+.primary-button i {
+    padding: 5px;
+}
+
+.primary-button:hover {
     transform: translateY(-5px);
     cursor: pointer;
 
 }
 
+/* hero section style  */
+.hero-section {
+    width: 100%;
+    height: 800px;
+    background-image: url(./B13-A02-TechWave-main/assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+}
 
-@media screen and (max-width:576px) {
-   .nav-items{
-    display: none;
-   } 
-   .nav-btn{
-    display: none;
-   }
-   .hamburger-icon{
-    display: block;
-    cursor: pointer;
-   }
-   .navigation-bar{
-    width: 80%;
+.hero-container {
+    max-width: 1280px;
+    position: relative;
     margin: 0 auto;
-    justify-content: space-between;
-    padding: 10 0;
+    text-align: center;
+}
 
-   }
-   .nav-logo h3{
-    font-size: 1.5rem;
-   }
+.hero-image1 {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    left: auto;
+    top: 150px;
+}
+
+.hero-image2 {
+    position: absolute;
+    width: 117px;
+    height: auto;
+    right: 45%;
+    top: 240px;
+}
+
+.new-button {
+    position: absolute;
+    color: black;
+    background-color: rgb(42, 219, 136);
+    display: inline;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    z-index: 3;
+    top: 150px;
+    right: 40%;
+}
+
+.hero-text-box {
+    top: 550px;
+    position: absolute;
+    left: 32%;
+}
+
+.hero-text-box h1 {
+    font-size: 3rem;
+    color: var(--text-primary-color);
+}
+
+.hero-text-box p {
+    font-size: 1rem;
+    color: rgb(194, 190, 190);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#btn2 i {
+    margin-right: 10px;
+    border: none;
+}
+
+#btn3 {
+    padding: 8px 25px;
+    border: 1px solid rgb(42, 219, 136);
+    border-radius: 25px;
+    color: rgb(42, 219, 136);
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#btn3 i {
+    margin-right: 10px;
+}
+
+#btn3:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/* small device screen  */
+@media screen and (max-width:576px) {
+    .nav-items {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation-bar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-logo h3 {
+        font-size: 1.5rem;
+    }
+
+    /* hero hection  */
+    .nav-items {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-container {
+        max-width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .hero-image1 {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        left: auto;
+        top: 150px;
+    }
+
+    .hero-image2 {
+        position: absolute;
+        width: 70px;
+        height: auto;
+        right: 42%;
+        top: 220px;
+    }
+
+    .hero-text-box p {
+        padding: 20px 20px;
+    }
+
+    .new-button {
+        position: absolute;
+        top: 150px;
+        right: 30%;
+        padding: 4px 10px;
+    }
+
+    .hero-btn-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-text-box {
+        position: static;
+        margin-top: 200px;
+    }
+}
+
+/* miduam device screen  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .hero-section {
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-container {
+        text-align: center;
+        position: relative;
+    }
+
+    .hero-image1 {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        left: auto;
+        top: 150px;
+    }
+
+    .hero-image2 {
+        width: 70px;
+        height: auto;
+        right: 46%;
+        top: 240px;
+    }
+
+    .new-button {
+        position: absolute;
+        top: 150px;
+        right: 35%;
+        padding: 4px 10px;
+    }
+
+    .hero-text-box {
+        position: static;
+        margin-top: 200px;
+    }
 }
