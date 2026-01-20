@@ -103,6 +103,21 @@ header {
     top: 240px;
 }
 
+@keyframes heroPulse {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
+.hero-image2 {
+    animation: heroPulse 3s ease-in-out infinite;
+}
+
 .new-button {
     position: absolute;
     color: black;
@@ -419,6 +434,42 @@ header {
     width: 20px;
     height: 20px;
 }
+footer{
+    width: 100%;
+    background-image: url(./B13-A02-TechWave-main/assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+.footer-logo{
+    font-size: 5rem;
+    color: var(--text-primary-color);
+    padding: 10px 0;
+}
+.sponser{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+.sponser-box{
+    display: flex;
+    gap: 10px;
+}
+.sponser-box p{
+    color:rgb(194, 190, 190) ;
+}
+.copyright{
+    color: rgb(194, 190, 190);
+    margin-top: 100px;
+}
 
 /* episodes section related style  */
 /* host section style  */
@@ -605,5 +656,8 @@ header {
     .host-socil-icon{
         justify-content: center;
         padding-top: 10px;
+    }
+    .sponser{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
