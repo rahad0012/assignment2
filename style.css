@@ -209,6 +209,95 @@ header {
     color: #00ff88;
 }
 
+/* service section related style  */
+.service-section {
+    width: 100%;
+    height: auto;
+    background-color: rgba(35, 14, 61, 1);
+}
+
+.service-container {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.service-title {
+    font-size: 2.5rem;
+    color: var(--text-primary-color);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.service-card-box {
+    margin-top: 30px;
+}
+
+.service-card-box>* {
+    padding: 30px;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+}
+
+.card1 {
+    grid-area: card-1;
+}
+
+.card2 {
+    grid-area: card-2;
+}
+
+.card3 {
+    grid-area: card-3;
+}
+
+.card4 {
+    grid-area: card-4;
+}
+
+.card5 {
+    grid-area: card-5;
+}
+
+.service-card-box {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+        "card-1 card-2 card-2"
+        "card-1 card-3 card-3"
+        "card-4 card-4 card-5";
+}
+
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 40px;
+    height: 40px;
+}
+
+.card4 img {
+    height: 70px;
+    width: 70px;
+}
+
+.service-card h4 {
+    font-size: 1.5rem;
+    color: var(--text-primary-color);
+    padding: 10px 0;
+}
+
+.service-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(194, 190, 190);
+}
 
 /* miduam device screen  */
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -352,5 +441,15 @@ header {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 40px;
+    }
+    .service-card-box{
+        width: 90%;
+        margin: 0 auto;
+        grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5";
     }
 }
