@@ -363,7 +363,69 @@ header {
     height: 20px;
 }
 
+.host-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+}
+
+.host-container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-primary-color);
+}
+
+.host-box {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 40px 20px;
+    border-radius: 15px;
+    gap: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+}
+
+.host-text-box h2 {
+    font-size: 2rem;
+    color: var(--text-primary-color);
+    text-align: left;
+    padding: 10px 0;
+}
+
+.host-text-box p {
+    font-size: 1rem;
+    color: rgb(194, 190, 190);
+    padding-bottom: 10px;
+}
+
+.host-socil-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(255, 233, 233);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
 /* episodes section related style  */
+/* host section style  */
+.host-container {
+    max-width: 1200px;
+}
+
 /* miduam device screen  */
 @media screen and (min-width:576px) and (max-width:992px) {
     .hero-section {
@@ -529,5 +591,19 @@ header {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         justify-items: center;
+    }
+    .host-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .host-text-box{
+        text-align: center;
+    }
+    .host-text-box h2{
+        text-align: center;
+    }
+    .host-socil-icon{
+        justify-content: center;
+        padding-top: 10px;
     }
 }
