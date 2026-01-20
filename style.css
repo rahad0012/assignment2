@@ -299,6 +299,71 @@ header {
     color: rgb(194, 190, 190);
 }
 
+/* episodes section related style  */
+.episodes-section {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-primary-color);
+}
+
+.episodes-container {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.episodes-container h2 {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-primary-color);
+    font-size: 2.5rem;
+}
+
+.episodes-card-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.episode-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    text-align: left;
+    width: 350px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.episode-card iframe {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.episode-card-title {
+    font-size: 1.5rem;
+    color: var(--text-primary-color);
+    padding: 10px;
+}
+
+.episode-card-describtion {
+    font-size: 1rem;
+    color: rgb(194, 190, 190);
+    padding: 15px 10px;
+}
+
+.timer-box {
+    display: flex;
+    color: #00ff88;
+    gap: 10px;
+    padding: 0 10px 20px;
+}
+
+.timer-box img {
+    width: 20px;
+    height: 20px;
+}
+
+/* episodes section related style  */
 /* miduam device screen  */
 @media screen and (min-width:576px) and (max-width:992px) {
     .hero-section {
@@ -343,6 +408,12 @@ header {
 
     .about-podcast {
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .episodes-card-box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
         justify-items: center;
     }
 }
@@ -442,14 +513,21 @@ header {
         justify-items: center;
         gap: 40px;
     }
-    .service-card-box{
+
+    .service-card-box {
         width: 90%;
         margin: 0 auto;
-        grid-template-areas: 
-        "card-1"
-        "card-2"
-        "card-3"
-        "card-4"
-        "card-5";
+        grid-template-areas:
+            "card-1"
+            "card-2"
+            "card-3"
+            "card-4"
+            "card-5";
+    }
+
+    .episodes-card-box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
     }
 }
